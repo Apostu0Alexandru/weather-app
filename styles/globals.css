@@ -18,10 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  justify-content: center;
+  /* Center children vertically */
+  align-items: center;
+  /* Center children horizontally */
+  height: 100vh;
+  /* Make sure the container fills the viewport height */
+}
+
+.header {
+  padding: 20px 20px 60px
 }

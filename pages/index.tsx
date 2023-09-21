@@ -30,8 +30,8 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Weather App</h1>
+    <div className='container'>
+      <h1 className='header'>Weather App</h1>
       <SearchBar onSearch={handleSearch} />
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
